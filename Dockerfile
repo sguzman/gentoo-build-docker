@@ -18,9 +18,9 @@ RUN mkdir --parents /mnt/gentoo/etc/portage/repos.conf
 RUN cp --verbose /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 RUN cp --verbose --dereference /etc/resolv.conf /mnt/gentoo/etc/resolv.conf
 
-RUN mount --types proc /proc /mnt/gentoo/proc
-RUN mount --rbind /sys /mnt/gentoo/sys
-RUN mount --make-rslave /mnt/gentoo/sys
-RUN mount --rbind /dev /mnt/gentoo/dev
-RUN mount --make-rslave /mnt/gentoo/dev
+#RUN mount --types proc /proc /mnt/gentoo/proc
+#RUN mount --rbind /sys /mnt/gentoo/sys
+#RUN mount --make-rslave /mnt/gentoo/sys
+#RUN mount --rbind /dev /mnt/gentoo/dev
+#RUN mount --make-rslave /mnt/gentoo/dev
 
